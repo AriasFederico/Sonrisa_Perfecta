@@ -1,0 +1,31 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .topSection {
+        background-color: $color-primary-muted;
+        color: $color-primary-dark;
+        border: 1px solid $color-primary-muted;
+    }
+    
+    .cards {
+        margin-top: $space-4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // flex-direction: column;
+        gap: $space-2;
+    }
+    
+    .title {
+        &::after {
+            content:' cambian vidas';
+            color:$color-primary;
+        }
+    }
+    
+    .title, .text {
+        text-align: center;
+    }
+}

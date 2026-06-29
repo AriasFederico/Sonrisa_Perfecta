@@ -1,0 +1,38 @@
+.reviews {
+    margin-top: $space-2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $space-1;
+    border: 1px solid $color-yellow;
+    background-color: $color-yellow-muted;
+    padding: $space-2;
+    border-radius: $radius-lg;
+
+    @include for-tablet(){
+        flex-direction: row;
+    }
+
+    .stars {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        color: $color-yellow;
+    }
+
+    .starIcon {
+        width: 20px;
+        height: 20px
+    }
+
+    .rating {
+        color: $foreground;
+        font-weight: 800;
+    }
+
+    .span {
+        color: $accent-foreground;
+        font-weight: 600;
+        font-size: $font-sm;
+    }
+}

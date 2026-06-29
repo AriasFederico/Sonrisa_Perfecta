@@ -1,0 +1,75 @@
+.itemCardList {
+    border:1px solid $color-border;
+    border-radius: $radius-lg;
+    padding: $space-4;
+    background-color: $white;
+    border-top: $space-1 solid $color-primary;
+    max-width: 350px;
+    transition: $transition;
+
+
+    &:hover {
+        box-shadow: $shadow-soft;
+        transform: translateY(-8px);
+    }
+}
+
+.span {
+    background-color: $color-primary-muted;
+    border-radius: $radius-lg;
+    font-size: 12px;
+    color:$color-primary-dark;
+    border: 1px solid $color-primary-muted;
+    padding: $space-1;
+    font-weight: 600;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: $space-1;
+}
+
+.icon_container {
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: $color-green-muted;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $radius-md;
+    margin-bottom: $space-2;
+}
+
+.icon {
+    width: 50%;
+    color: $color-green;
+}
+
+.title {
+    margin-bottom: $space-1;
+}
+
+.subtitle {
+    color: $color-primary;
+    font-weight: 600;
+    font-size: $font-sm;
+    margin-bottom: $space-2;
+}
+
+.text {
+    font-size: $font-sm;
+}
+
+.list {
+    margin: $space-2 0;
+    display:flex;
+    flex-direction: column;
+    gap: $space-1;
+}
+
+.listItem {
+    font-size: $font-sm;
+    color: $foreground-muted;
+}

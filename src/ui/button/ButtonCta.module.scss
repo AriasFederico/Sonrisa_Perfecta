@@ -1,0 +1,50 @@
+.button {
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  transition: $transition;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-1;
+  background-color: $color-primary;
+  color: $white;
+  width: fit-content;
+  box-shadow: $shadow-primary;
+  // letter-spacing: 1px;
+  font-weight: 600;
+  
+  &:hover {
+    background-color: $color-primary-dark;
+    color: $white;
+    transform: translateY(-1px);
+  }
+  
+  &.md {
+    padding: $space-2 $space-3; // 16px x 32px
+
+    .icon {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+
+  &.sm {
+    padding: 10px $space-3; // 8px x 24px
+    font-size: $font-sm;
+  
+    .icon {
+      width:1rem; // Icono más chiquito para el header
+      height: 1rem;
+    }
+  }
+
+  &.secondary {
+    background-color: $white;
+    color: $color-primary;
+
+    &:hover {
+      // background-color: $white;
+      // color: $color-primary;
+    }    
+  }
+}

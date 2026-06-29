@@ -1,0 +1,39 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .topSection {
+        background-color: $color-primary-muted;
+        color: $color-primary-dark;
+        border: 1px solid $color-primary-muted;
+    }
+    .title {
+        text-align: center;
+        &::after{
+            content:'nuestra prioridad';
+            color: $color-primary;
+        }
+    }
+    
+    .text {
+        max-width: 500px;
+        text-align: center;
+        color: $accent-foreground;
+    }
+    
+    .cards {
+        margin-top: $space-4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // flex-direction: column;
+        gap: $space-2;
+    
+        @include for-tablet(){
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+    
+        }
+    }
+}

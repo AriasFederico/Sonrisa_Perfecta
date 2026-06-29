@@ -1,0 +1,119 @@
+.footer {
+    background-color: #0f1729;
+    color: $white;
+    padding: $space-6 0;
+    // display: flex;
+    justify-content: space-around;
+    
+    .icon {
+        color: white;
+        width: $space-2;
+        height: $space-2;
+    }
+
+    @include for-tablet(){
+        flex-direction: row;
+    }
+
+    .container {
+        @include container();
+        display: flex;
+        flex-direction: column;
+        gap: $space-2;
+
+        @include for-tablet(){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        gap: $space-4;
+    }
+
+    .logoNameText {
+        color: white;
+    }
+    
+    .about {
+        
+        .text {
+            color: $color-gray;
+            margin-top: $space-2;
+        }
+    }
+    
+    .hours {
+        width: 100%;
+
+        .hoursHeader {
+            display: flex;
+            align-items: center;
+            gap: $space-1;
+            margin-bottom: $space-2;
+        }
+        
+        .title {
+            color: white;
+        }
+        
+        .listItems  {
+            display: flex;
+            flex-direction: column;
+            gap: $space-1;
+            width: 100%;
+            
+        }
+        
+        .item {
+            display: flex;
+            gap: $space-4;
+            justify-content: space-between;
+            gap: $space-1;
+            
+            p {
+                color: $color-gray;
+            }
+        }
+
+    }
+
+    .location {
+
+        .locationHeader {
+            display: flex;
+            align-items: center;
+            gap: $space-1;
+            margin-bottom: $space-2;
+        }
+        
+        .title {
+            color: white;
+        }
+
+
+        .locationCard {
+            background-color: $color-primary-muted;
+            border: 1px solid $color-primary;
+            padding: $space-2;
+            border-radius: $radius-lg;
+
+            p {
+                color: white;
+            }
+
+            span {
+                color: $color-gray;
+            }
+        }
+
+        .phoneCard {
+            background-color: $color-primary-muted;
+            display: flex;
+            align-items: center;
+            gap: $space-1;
+            margin-top: $space-3;
+            border: 1px solid $color-primary;
+            padding: $space-2;
+            border-radius: $radius-lg;
+        }
+    }
+}

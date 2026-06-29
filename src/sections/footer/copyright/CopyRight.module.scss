@@ -1,0 +1,17 @@
+.copy {
+    @include container();
+    display: flex;
+    flex-direction: column;
+    gap: $space-3;
+    text-align: center;
+    margin-top: $space-4;
+    border-top: 1px solid $color-gray;
+    padding-top: $space-3;
+    color: $color-gray;
+    font-size: $font-sm;
+    
+    @include for-tablet(){
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

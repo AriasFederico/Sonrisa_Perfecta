@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    font-family: 'Inter',san-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; // Para que no se pongan azules por defecto
+    display: inline-block;
+    transition: $transition;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img, svg {
+    max-width: 100%;
+    display: block; // Quita el espacio extra que tienen debajo las imágenes
+    height: auto;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: $space-2;
+    color: $foreground;
+    font-weight: 800;
+
+    @include for-tablet(){
+        font-size: 60px;
+    }
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    color: $foreground;
+}
+
+h3,h4 {
+    color: $foreground;
+}
+
+p {
+    line-height: 1.7rem;
+    color:$accent-foreground;
+    font-weight: 500;
+}

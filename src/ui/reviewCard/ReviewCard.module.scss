@@ -1,0 +1,65 @@
+.card {
+    border: 1px solid $color-border;
+    padding: $space-3;
+    border-radius: $radius-lg;
+    max-width: 350px;
+    transition: $transition;
+
+    &:hover {
+        box-shadow: $shadow-soft;
+        transform: translateY(-10px);
+    }
+
+    .starsContainer {
+        display: flex;
+    }
+
+    .starIcon {
+        color: $color-yellow;
+        width: 20px;
+        height: 20px;
+    }
+
+    .quotes {
+        color: $color-border;
+        width: 25px;
+        height: 25px;
+        
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .text {
+        margin-top: $space-2;
+
+    }
+
+    .service {
+        color: $foreground-muted;
+        font-size: 12px;
+    }
+
+    .userContainer {
+        display: flex;
+        margin-top: $space-2;
+    }
+    
+    .user {
+        font-weight: bold;
+        color: $foreground;
+    }
+
+    .googleIcon {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .userFlex {
+        display: flex;
+        flex-direction: column;    
+        padding-right: $space-3;
+    }
+}

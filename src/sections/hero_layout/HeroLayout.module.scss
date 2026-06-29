@@ -1,0 +1,54 @@
+.heroLayout {
+  // --- CONFIGURACIÓN PARA MOBILE ---
+  background: $color-primary;
+  background: radial-gradient(circle, rgba(67, 173, 244, 0.18) 0%, rgba(255, 255, 255, 1) 100%);  padding: $space-9 0;
+  display: flex;
+  align-items: center;
+
+  &.light {background-color: $white;}
+  &.soft {background-color: $bg-soft;}
+  &.bgImage {
+    // background-image: url('https://i.blogs.es/5efe2c/cap_001/1366_2000.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      // height: 100vh;
+      /* El gradiente: empieza sólido, se aclara al medio y se vuelve muy transparente al final */
+      background: linear-gradient(
+        to right, 
+        #fcfdfd 0%,      /* background sólido */
+        #fcfdfdd9 50%,   /* via-background/85 */
+        #fcfdfd66 100%   /* to-background/40 */
+      );
+    }
+  }
+  
+  .container {
+    z-index: 100;
+    width: 100%;
+    @include container;
+  }
+
+  // --- CONFIGURACIÓN PARA DESKTOP ---
+  @include for-tablet {
+    min-height: 100vh;
+    padding:0;
+    
+    .container {
+      // comentar width si es un hero con bg
+        width: auto;
+      // comentar width si es un hero con bg
+        display: flex;
+        align-items: center;
+        // gap: $space-4;
+      }
+    }
+}

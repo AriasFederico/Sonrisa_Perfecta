@@ -1,0 +1,20 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title,.text,.span {
+        color: white;
+        text-align: center;
+    }    
+
+    .text {
+        margin-bottom: $space-2;
+    }
+
+    .span {
+        margin-top: $space-2;
+        font-size: 12px;
+    }
+}
