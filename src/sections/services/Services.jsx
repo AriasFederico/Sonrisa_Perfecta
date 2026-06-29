@@ -7,7 +7,7 @@ export const Services = ({ data, whatsappNumber }) => {
 	const wsp_base = `https://wa.me/${whatsappNumber}?text=`;
 
 	return (
-		<SectionLayout bgVariant={'soft'}>
+		<SectionLayout bgVariant={'soft'} id='services'>
 			<motion.div
 				className={styles.content}
 				initial={{ opacity: 0 }}

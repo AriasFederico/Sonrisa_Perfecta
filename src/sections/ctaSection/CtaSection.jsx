@@ -11,6 +11,7 @@ export const CtaSection = ({ data, whatsappUrl }) => {
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				transition={{ duration: 1.5 }}
+				id='cta'
 			>
 				<h2 className={styles.title}>{title}</h2>
 				<p className={styles.text}>{text}</p>

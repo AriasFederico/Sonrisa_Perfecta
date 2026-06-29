@@ -5,7 +5,7 @@ import styles from './ValueProposition.module.scss';
 export const ValueProposition = ({ data }) => {
 	const { topSection, title, text, cards } = data;
 	return (
-		<SectionLayout>
+		<SectionLayout id={'about'}>
 			<motion.div
 				className={styles.content}
 				initial={{ opacity: 0 }}

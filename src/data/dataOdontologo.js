@@ -6,7 +6,6 @@ export const dataOdontologo = {
 	whatsappNumber: '2213186889',
 
 	logo: {
-		href: '#',
 		src: logo,
 		clinicName: 'Sonrisa Perfecta',
 		secondName: 'CLINICA DENTAL',
@@ -14,9 +13,9 @@ export const dataOdontologo = {
 
 	header: {
 		nav_links: [
-			{ text: 'Nosotros', href: '#' },
-			{ text: 'Tratamientos', href: '#' },
-			{ text: 'Contacto', href: '#' },
+			{ text: 'Nosotros', href: '#about' },
+			{ text: 'Tratamientos', href: '#services' },
+			{ text: 'Contacto', href: '#footer' },
 		],
 		cta: {
 			text: 'Agendar turno',

@@ -11,7 +11,7 @@ export const Footer = ({ logo, data }) => {
 	const IconPhone = iconMap[location.phone.icon];
 
 	return (
-		<footer className={styles.footer}>
+		<footer className={styles.footer} id='footer'>
 			<div className={styles.container}>
 				<div className={styles.about}>
 					<Logo

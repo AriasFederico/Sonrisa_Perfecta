@@ -1,4 +1,5 @@
 import styles from './Logo.module.scss';
+
 export const Logo = ({
 	src,
 	className,
@@ -7,7 +8,11 @@ export const Logo = ({
 	secondName,
 }) => {
 	return (
-		<a href={'#'} className={styles.logo}>
+		<button
+			type='button'
+			className={styles.logo}
+			onClick={() => window.scrollTo({ top: 0 })}
+		>
 			<img
 				src={src}
 				alt={clinicName}
@@ -17,6 +22,6 @@ export const Logo = ({
 				<p className={`${styles.clinicName} ${classNameText}`}>{clinicName}</p>
 				{secondName && <span className={styles.secondName}>{secondName}</span>}
 			</div>
-		</a>
+		</button>
 	);
 };
