@@ -1,14 +1,18 @@
 import imageHero from '../assets/heroSection.webp';
 import logo from '../assets/logo.webp';
 
-export const dataOdontologo = {
-	clinicName: 'Sonrisa Perfecta',
-	whatsappNumber: '2213186889',
+const CLINIC_NAME = 'Centro LAM';
+const SECOND_NAME = 'CLINICA DENTAL';
+const PHONE_NUMBER = '5492213186889'; // Número sin espacios ni símbolos (+, -, etc.)
 
+const buildWaLink = (message) =>
+	`https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+
+export const dataOdontologo = {
 	logo: {
 		src: logo,
-		clinicName: 'Sonrisa Perfecta',
-		secondName: 'CLINICA DENTAL',
+		clinicName: CLINIC_NAME,
+		secondName: SECOND_NAME,
 	},
 
 	header: {
@@ -87,8 +91,9 @@ export const dataOdontologo = {
 					'Sin dolor post-operatorio',
 				],
 				cta: {
-					waText:
-						'Hola%2C%20me%20interesa%20el%20tratamiento%20de%20Implantes%20Dentales.',
+					href: buildWaLink(
+						'Hola!, Me interesa el tratamiento de Implantes Dentales',
+					),
 					text: 'Consultar tratamiento',
 					icon: 'chat',
 				},
@@ -105,8 +110,9 @@ export const dataOdontologo = {
 					'Seguimiento digital',
 				],
 				cta: {
-					waText:
-						'Hola%2C%20me%20interesa%20el%20tratamiento%20de%20Ortodoncia%20Invisible.',
+					href: buildWaLink(
+						'Hola!, Me interesa el tratamiento de Ortodoncia Invisible',
+					),
 					text: 'Consultar tratamiento',
 					icon: 'chat',
 				},
@@ -123,8 +129,9 @@ export const dataOdontologo = {
 					'Efecto duradero 12 meses',
 				],
 				cta: {
-					waText:
-						'Hola%2C%20me%20interesa%20el%20tratamiento%20de%20Blanqueamiento%20Express.',
+					href: buildWaLink(
+						'Hola!, Me interesa el tratamiento de Blanqueamiento Express',
+					),
 					text: 'Consultar tratamiento',
 					icon: 'chat',
 				},

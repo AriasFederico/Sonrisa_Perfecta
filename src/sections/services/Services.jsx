@@ -2,9 +2,8 @@ import { motion } from 'framer-motion';
 import { ItemCardList, TopSection } from '../../ui';
 import { SectionLayout } from '../';
 import styles from './Services.module.scss';
-export const Services = ({ data, whatsappNumber }) => {
+export const Services = ({ data }) => {
 	const { topSection, title, text, cards } = data;
-	const wsp_base = `https://wa.me/${whatsappNumber}?text=`;
 
 	return (
 		<SectionLayout bgVariant={'soft'} id='services'>
@@ -28,7 +27,6 @@ export const Services = ({ data, whatsappNumber }) => {
 							list={list}
 							cta={cta}
 							span={span}
-							wsp_base={wsp_base}
 						/>
 					))}
 				</div>

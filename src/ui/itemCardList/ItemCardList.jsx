@@ -10,7 +10,6 @@ export const ItemCardList = ({
 	text,
 	list,
 	cta,
-	wsp_base,
 }) => {
 	const Icon = iconMap[icon];
 
@@ -35,7 +34,7 @@ export const ItemCardList = ({
 			<ButtonCta
 				variant='secondary'
 				size='sm'
-				href={`${wsp_base}${cta.waText}`}
+				href={cta.href}
 				text={cta.text}
 				icon={cta.icon}
 			/>
