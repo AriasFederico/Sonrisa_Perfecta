@@ -1,7 +1,7 @@
 import imageHero from '../assets/heroSection.webp';
 import logo from '../assets/logo.webp';
 
-const CLINIC_NAME = 'Centro LAM';
+const CLINIC_NAME = 'Sonrisa Perfecta';
 const SECOND_NAME = 'CLINICA DENTAL';
 const PHONE_NUMBER = '5492213186889'; // Número sin espacios ni símbolos (+, -, etc.)
 
